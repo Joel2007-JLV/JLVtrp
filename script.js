@@ -30,11 +30,16 @@ win.innerHTML = `
 
 document.querySelector('.desktop').appendChild(win);
 
-// close button
-win.querySelector('.buttons').onclick = () => win.remove();
+// close button compatible con móvil
+win.querySelector('.buttons').addEventListener('click', () => win.remove());
+win.querySelector('.buttons').addEventListener('touchstart', e => { e.preventDefault(); win.remove(); });
 
-// mantener al frente al hacer click
+// mantener al frente al hacer click o tocar en móvil
 win.addEventListener('mousedown', () => {
+  topZ++;
+  win.style.zIndex = topZ;
+});
+win.addEventListener('touchstart', () => {
   topZ++;
   win.style.zIndex = topZ;
 });
