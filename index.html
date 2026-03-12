@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,27 +8,26 @@
 </head>
 <body>
 
-<div class="desktop">
-
-  <!-- Desktop Icons -->
-  <div class="icon" onclick="openProgram('music')">🎵<span>Adelantos</span></div>
-  <div class="icon" onclick="openProgram('about')" style="top:100px">💿<span>Sobre jlv</span></div>
-  <div class="icon" onclick="openProgram('links')" style="top:180px">🌐<span>Links</span></div>
-
-  <!-- Single Window -->
-  <div id="window" class="window hidden">
-    <div class="title-bar" id="titleBar">
-      <span id="windowTitle">Programa</span>
-      <span class="buttons" onclick="closeWindow()">X</span>
-    </div>
-
-    <div class="content" id="windowContent"></div>
-  </div>
-
+<!-- XP BOOT SCREEN -->
+<div id="boot">
+  <div class="boot-text">Iniciando...</div>
 </div>
 
+<div class="desktop">
+
+  <!-- ICONOS -->
+  <div class="icon" onclick="openProgram('trash')" style="top:20px">🗑<span>Papelera</span></div>
+  <div class="icon" onclick="openProgram('music')" style="top:100px">🎵<span>Adelantos</span></div>
+  <div class="icon" onclick="openProgram('about')" style="top:180px">💿<span>Sobre jlv</span></div>
+  <div class="icon" onclick="openProgram('links')" style="top:260px">🌐<span>Links</span></div>
+<!--  <div class="icon" onclick="openProgram('letters')" style="top:340px">📁<span>Letras</span></div> -->
+<!--  <div class="icon" onclick="openProgram('secret')" style="top:420px">📁<span>???</span></div> -->
+
+</div>
 <div class="taskbar">
-  <div class="start">Start</div>
+  <div class="start">
+    <img src="start.png" alt="Start">
+  </div>
   <div class="clock">jlv.exe</div>
 </div>
 
