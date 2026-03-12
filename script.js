@@ -1,3 +1,5 @@
+// script.js
+
 let topZ = 100; // para controlar superposición
 
 function createWindow(titleText, htmlContent){
@@ -37,7 +39,7 @@ win.addEventListener('mousedown', () => {
   win.style.zIndex = topZ;
 });
 
-// drag para escritorio y móvil con límites solo al mover
+// drag para escritorio y móvil con límites solo en móvil
 const bar = win.querySelector('.title-bar');
 
 function dragStart(e){
@@ -64,6 +66,7 @@ function dragStart(e){
   }
 
   function onMove(e){
+    e.preventDefault();
     let moveX = e.clientX || e.touches[0].clientX;
     let moveY = e.clientY || e.touches[0].clientY;
     moveAt(moveX, moveY);
@@ -86,7 +89,6 @@ bar.addEventListener('touchstart', dragStart, {passive:false});
 bar.ondragstart = () => false;
 
 }
-
 
 function openProgram(program){
 
