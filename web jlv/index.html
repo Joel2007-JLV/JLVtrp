@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jlv desktop</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="desktop">
+
+  <!-- Desktop Icons -->
+  <div class="icon" onclick="openProgram('music')">🎵<span>Adelantos</span></div>
+  <div class="icon" onclick="openProgram('about')" style="top:100px">💿<span>Sobre jlv</span></div>
+  <div class="icon" onclick="openProgram('links')" style="top:180px">🌐<span>Links</span></div>
+
+  <!-- Single Window -->
+  <div id="window" class="window hidden">
+    <div class="title-bar" id="titleBar">
+      <span id="windowTitle">Programa</span>
+      <span class="buttons" onclick="closeWindow()">X</span>
+    </div>
+
+    <div class="content" id="windowContent"></div>
+  </div>
+
+</div>
+
+<div class="taskbar">
+  <div class="start">Start</div>
+  <div class="clock">jlv.exe</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

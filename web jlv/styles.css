@@ -1,0 +1,87 @@
+
+/* styles.css */
+body{
+margin:0;
+font-family:Tahoma, Verdana, sans-serif;
+}
+
+.desktop{
+width:100vw;
+height:100vh;
+background:#008080;
+position:relative;
+overflow:hidden;
+}
+
+.icon{
+position:absolute;
+left:20px;
+top:20px;
+color:white;
+text-align:center;
+width:80px;
+cursor:pointer;
+font-size:28px;
+}
+
+.icon span{
+display:block;
+font-size:12px;
+margin-top:4px;
+}
+
+.window{
+position:absolute;
+width:320px;
+top:120px;
+left:300px;
+background:#c0c0c0;
+border:2px solid black;
+box-shadow:4px 4px 0 black;
+}
+
+.hidden{
+display:none;
+}
+
+.title-bar{
+background:linear-gradient(#000080,#1084d0);
+color:white;
+padding:5px;
+font-weight:bold;
+cursor:move;
+display:flex;
+justify-content:space-between;
+}
+
+.content{
+padding:12px;
+background:#dfdfdf;
+}
+
+.taskbar{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+height:40px;
+background:#c0c0c0;
+border-top:2px solid #fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 10px;
+box-sizing:border-box;
+}
+
+.start{
+background:#c0c0c0;
+border:2px outset #fff;
+padding:5px 12px;
+font-weight:bold;
+}
+
+.clock{
+font-size:14px;
+}
+
