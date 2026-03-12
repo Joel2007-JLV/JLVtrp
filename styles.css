@@ -1,0 +1,153 @@
+/* GENERAL */
+body{
+  margin:0;
+  font-family:Tahoma, Verdana, sans-serif;
+}
+.desktop{
+  width:100vw;
+  height:100vh;
+  background:#008080;
+  position:relative;
+  overflow:hidden;
+}
+
+/* ICONOS */
+.icon{
+  position:absolute;
+  left:20px;
+  top:20px;
+  color:white;
+  text-align:center;
+  width:80px;
+  cursor:pointer;
+  font-size:28px;
+}
+.icon span{
+  display:block;
+  font-size:12px;
+  margin-top:4px;
+}
+
+/* VENTANAS */
+.window{
+  position:absolute;
+  background:#c0c0c0;
+  border:2px solid black;
+  box-shadow:4px 4px 0 black;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.window.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.hidden{
+  display:none;
+}
+.title-bar{
+  background:linear-gradient(#000080,#1084d0);
+  color:white;
+  padding:5px;
+  font-weight:bold;
+  cursor:move;
+  display:flex;
+  justify-content:space-between;
+}
+.content{
+  padding:12px;
+  background:#dfdfdf;
+}
+
+/* TASKBAR */
+.taskbar{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:40px;
+  background:#c0c0c0;
+  border-top:2px solid #fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 10px;
+  box-sizing:border-box;
+}
+.start img{
+  height:32px;
+  cursor:pointer;
+}
+.clock{
+  font-size:14px;
+}
+
+/* BOOT SCREEN */
+#boot{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:black;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  font-family:Tahoma;
+  font-size:22px;
+  color:white;
+  overflow:hidden;
+}
+
+#boot .boot-text{
+  position:relative;
+  z-index:1001;
+  transition: opacity 0.5s ease;
+}
+
+/* CORTINAS */
+.boot-curtain {
+  position:absolute;
+  top:0;
+  width:50%;
+  height:100%;
+  background:black;
+  z-index:1000;
+  transition: transform 1s ease;
+}
+
+.boot-curtain.left {
+  left:0;
+}
+
+.boot-curtain.right {
+  right:0;
+}
+
+/* REPRODUCTOR ESTILO WINDOWS MEDIA PLAYER */
+.player{
+  background:#c0c0c0;
+  border:2px inset #fff;
+  padding:10px;
+}
+.player-title{
+  font-weight:bold;
+  margin-bottom:10px;
+}
+audio{
+  width:100%;
+}
+
+/* BOTONES DE TXT */
+button{
+  background:#c0c0c0;
+  border:2px outset #fff;
+  padding:5px 8px;
+  margin:2px 0;
+  cursor:pointer;
+  font-family:Tahoma;
+}
+button:hover{
+  border:2px inset #fff;
+  background:#dfdfdf;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jlv desktop</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- XP BOOT SCREEN -->
+<div id="boot">
+  <div class="boot-text">Iniciando...</div>
+</div>
+
+<div class="desktop">
+
+  <!-- ICONOS -->
+  <div class="icon" onclick="openProgram('trash')" style="top:20px">🗑<span>Papelera</span></div>
+  <div class="icon" onclick="openProgram('music')" style="top:100px">🎵<span>Adelantos</span></div>
+  <div class="icon" onclick="openProgram('about')" style="top:180px">💿<span>Sobre jlv</span></div>
+  <div class="icon" onclick="openProgram('links')" style="top:260px">🌐<span>Links</span></div>
+<!--  <div class="icon" onclick="openProgram('letters')" style="top:340px">📁<span>Letras</span></div> -->
+<!--  <div class="icon" onclick="openProgram('secret')" style="top:420px">📁<span>???</span></div> -->
+
+</div>
+<div class="taskbar">
+  <div class="start">
+    <img src="start.png" alt="Start">
+  </div>
+  <div class="clock">jlv.exe</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
